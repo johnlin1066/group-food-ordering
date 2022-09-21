@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring: 
+  application:
+    name: group-food-ordering
+  datasource:
+    url: jdbc:mysql://localhost:3306/group_food_ordering?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    show-sql: false
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQL57Dialect
+logging:
+  level:
+    com: 
+      example: debug
